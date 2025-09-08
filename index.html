@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<body>
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			agentforce_messaging.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+			agentforce_messaging.settings.devMode = true;
+			agentforce_messaging.init(
+				'00DSB00000QAo9R',
+				'mychannel',
+				'https://orgfarm-0c5a291cea.test1.my.pc-rnd.site.com/ESWmychannel1754976598162',
+				{
+					scrt2URL: 'https://orgfarm-0c5a291cea.test1.my.pc-rnd.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://orgfarm-0c5a291cea.test1.my.pc-rnd.site.com/ESWmychannel1754976598162/assets/js/init.js' onload='initEmbeddedMessaging()'></script></body>
+
+</html>
